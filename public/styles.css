@@ -1,0 +1,464 @@
+/* PAGE */
+
+body {
+    font-family: 'Chirp', sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* USER ACCOUNT PROFILE */
+
+.sidebar-left {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+}
+
+.profile {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f5f8;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #1DA1F2;
+    margin-bottom: 10px;
+}
+
+#profileName {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+#profileUsername {
+    font-size: 1em;
+    color: #777;
+    margin-top: -8px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.profile-stats p {
+    margin: 0;
+    padding: 8px 15px;
+    background-color: #1DA1F2;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.profile-stats p:hover {
+    background-color: #0a85cf;
+}
+
+.profile-header h3 {
+    margin: 10px 0 5px;
+}
+
+.edit-profile {
+    background-color: #f1f5f8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.edit-profile input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.edit-profile button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1DA1F2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Chirp', sans-serif;
+}
+
+.edit-profile button:hover {
+    background-color: #0a85cf;
+}
+
+.edit-profile {
+    background-color: #f1f5f8;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.edit-profile input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.edit-profile button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1DA1F2;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-profile button:hover {
+    background-color: #0a85cf;
+}
+
+/* TWITTER FEED */
+
+.main-content {
+    padding: 20px;
+    margin-left: 22%;
+    margin-right: 22%;
+    margin-top: -30px;
+    width: 56%;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+.tweet-content {
+    font-family: 'Chirp', sans-serif;
+}
+
+.tweet-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f1f5f8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tweet-box textarea {
+    width: 100%;
+    max-width: 550px;
+    height: 100px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    background-color: #fff;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    font-family: 'Chirp', sans-serif;
+}
+
+.tweet-box button {
+    width: 100px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #1DA1F2;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Chirp', sans-serif;
+}
+
+.tweet-box button:hover {
+    background-color: #0a85cf;
+}
+
+.tweet {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.tweet-feed {
+    margin-top: 10px;
+}
+
+.tweet-feed .tweet {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tweet:hover {
+    transform: scale(1.02);
+}
+
+.tweet-header {
+    display: flex;
+    align-items: center;
+}
+
+.tweet-profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.tweet-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.tweet-content {
+    margin-top: 10px;
+}
+
+.tweet-actions button {
+    background: none;
+    border: none;
+    color: #1DA1F2;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+.tweet-actions button:hover {
+    color: #0a85cf;
+}
+
+/* TRENDS - HOT TOPICS */
+
+.sidebar-right {
+    padding: 20px;
+    background-color: #f0f2f5;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    width: 20%;
+    overflow-y: auto;
+    border-left: 1px solid #d1d9e0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-right h3 {
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #d1d9e0;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-right li {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95em;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.sidebar-right li:hover {
+    background-color: #f0f9ff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    color: #1a91da;
+}
+
+.sidebar-right li::before {
+    content: "⬆️ ";
+    color: #1a91da;
+}
+
+/* DARK THEME */
+
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+/* DARK THEME - FEED */
+
+.dark-theme .tweet-box {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+.dark-theme .tweet-box textarea {
+    background-color: #333;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.dark-theme .tweet-box button {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.dark-theme .tweet-box button:hover {
+    background-color: #0a85cf;
+}
+
+.dark-theme .tweet {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+}
+
+/* DARK THEME - SIDEBARS */
+
+.dark-theme .sidebar-left,
+.dark-theme .sidebar-right {
+    background-color: #1e1e1e;
+}
+
+.dark-theme .edit-profile {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+}
+
+.dark-theme .edit-profile input[type="text"] {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-theme .edit-profile button {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.dark-theme .edit-profile button:hover {
+    background-color: #0a85cf;
+}
+
+.dark-theme .profile {
+    background-color: #1e1e1e;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme #profileName {
+    color: #ffffff;
+}
+
+.dark-theme #profileUsername {
+    color: #bbbbbb;
+}
+
+.dark-theme .profile-stats p {
+    background-color: #333;
+    color: #e1e1e1;
+}
+
+.dark-theme .sidebar-right {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.dark-theme .sidebar-right h3 {
+    color: #ffffff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.dark-theme .sidebar-right ul {
+    padding: 0;
+}
+
+.dark-theme .sidebar-right li {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    background-color: #333;
+    color: #e1e1e1;
+}
+
+.dark-theme .sidebar-right li:hover {
+    background-color: #121212;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* TWITTER FONTS */
+
+@font-face {
+    font-family: 'Chirp';
+    src: url('fonts/Chirp-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
